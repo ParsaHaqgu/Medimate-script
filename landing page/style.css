@@ -494,6 +494,12 @@ animation: hoverShake 0.15s linear 3;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
+
+.d-flex{
+  flex-direction: row-reverse;
+  justify-content: center;
+  
+}
 }
 
 .footer .footer-top {
@@ -516,11 +522,24 @@ animation: hoverShake 0.15s linear 3;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
+  display: flex;
+  flex-direction: row-reverse;
+  
 }
+
 
 .footer .footer-about p {
   font-size: 14px;
   font-family: var(--heading-font);
+  
+}
+
+.footer .footer-about span {
+  font-size: 2px;
+  font-family: var(--heading-font);
+  text-align: right;
+  
+  
 }
 
 .footer .social-links a {
@@ -530,17 +549,18 @@ animation: hoverShake 0.15s linear 3;
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, #fff, transparent 50%);
   font-size: 16px;
-  color: var(--accent-color);
+  color: #fff;
   margin-right: 10px;
   transition: 0.3s;
+  flex-direction: row-reverse;
 }
 
 .footer .social-links a:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
+  background-color: #fff;
+  color: var(--accent-color) ;
+  border-color: #fff;
 }
 
 .footer h4 {
@@ -548,6 +568,8 @@ animation: hoverShake 0.15s linear 3;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  align-items: self-start;
+  text-align: right;
 }
 
 .footer .footer-links {
@@ -570,6 +592,7 @@ animation: hoverShake 0.15s linear 3;
   padding: 10px 0;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .footer .footer-links ul li:first-child {
@@ -608,6 +631,11 @@ animation: hoverShake 0.15s linear 3;
 
 .footer .credits a {
   color: color-mix(in srgb, var(--contrast-color), transparent 30%);
+
+}
+
+.footer .standard{
+ 
 }
 
 /*--------------------------------------------------------------
@@ -1017,6 +1045,23 @@ section,
 /*--------------------------------------------------------------
 # city Section
 --------------------------------------------------------------*/
+
+#city-name {
+  .card_carousel :hover {
+
+    background-color: #48a1c2;
+    color: #e6f3ff;
+    border-radius: 1rem;
+
+  }
+.card_carousel {
+  background-color: #edf5f7 ;
+  border-radius: 1rem;
+  color: var(--heading-color);
+  margin-top: 10px;
+}
+ 
+}
 
 /*--------------------------------------------------------------
 # hospital Section
@@ -1437,123 +1482,7 @@ section,
    
   
   }
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing .pricing-item {
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 100%;
-  position: relative;
-}
 
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.pricing h4 {
-  font-size: 48px;
-  color: var(--accent-color);
-  font-family: var(--heading-font);
-  font-weight: 400;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-size: 18px;
-}
-
-.pricing ul {
-  padding: 20px 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.pricing ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  background-color: var(--background-color);
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-}
-
-.pricing .buy-btn:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.pricing .featured {
-  z-index: 10;
-}
-
-.pricing .featured .pricing-item {
-  background: var(--accent-color);
-}
-
-@media (min-width: 992px) {
-  .pricing .featured .pricing-item {
-    transform: scale(1.02, 1.1);
-  }
-}
-
-.pricing .featured h3,
-.pricing .featured h4,
-.pricing .featured h4 span,
-.pricing .featured ul,
-.pricing .featured ul .na,
-.pricing .featured ul i,
-.pricing .featured ul .na i {
-  color: var(--contrast-color);
-}
-
-.pricing .featured .buy-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--contrast-color);
-}
-
-.pricing .featured .buy-btn:hover {
-  background: color-mix(in srgb, var(--background-color), transparent 92%);
-}
 
 /*--------------------------------------------------------------
 # Faq Section
@@ -1580,11 +1509,12 @@ section,
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  margin: 0 30px 0 0;
+
   transition: 0.3s;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  flex-direction: column-reverse;
+
 }
 
 .faq .faq-container .faq-item h3 .num {
@@ -1645,26 +1575,24 @@ section,
   color: var(--accent-color);
 }
 
+.faq .faq-item h3{
+  text-align: right;
+}
+
+
+@media only screen and (max-width:767px){
+
+  .faq .faq-item h3{
+    font-size: 15px;
+  }
+  
+      }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
-}
 
-.contact .info-item i {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  font-size: 20px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
+
 
 .contact .info-item h3 {
   font-size: 20px;
@@ -1672,12 +1600,16 @@ section,
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
+  align-items: start;
+  text-align: right;
 }
 
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  align-items: start;
+  text-align: right;
 }
 
 .contact .php-email-form {
@@ -1734,17 +1666,23 @@ section,
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  align-items: start;
+  text-align: right;
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
+  align-items: start;
+  text-align: right;
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
+  align-items: start;
+  text-align: right;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
