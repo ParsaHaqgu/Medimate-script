@@ -98,19 +98,7 @@ h3 {
   color: #262626
 }
 
-.loginBox input[type="submit"] {
-  border: none;
-  outline: none;
-  height: 40px;
-  font-size: 16px;
-  background: #124265;
-  color: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  text-align: center;
-  align-items: center;
 
-}
 
 .loginBox a {
   color: #262626;
@@ -126,6 +114,32 @@ a:hover {
   color: #2194ae
 }
 
-p {
-  color: #649ee4
+
+
+.btn {
+  border: none;
+  height: 40px;
+  outline: none;
+  font-size: 16px;
+  background: #124265;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+p{
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  box-sizing: content-box;
+
+  
+}
+.btn :hover{
+ 
+
+  color: #a1c9e5;
 }
