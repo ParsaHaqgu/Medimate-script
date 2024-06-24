@@ -14,7 +14,7 @@ h2{
 body {
   margin: 0;
   padding: 0;
-  background: url(img/1.jpg) no-repeat;
+  background-color: #e9f3f5;
   height: 100vh;
   font-family: sans-serif;
   background-size: cover;
@@ -43,7 +43,7 @@ body {
   transform: translate(-50%, -50%);
   width: 350px;
   min-height: 200px;
-  background: #a6e1e1;
+  background: rgb(157, 212, 212);
   border-radius: 10px;
   padding: 40px;
   box-sizing: border-box
@@ -89,8 +89,8 @@ h4 {
 
 .loginBox input[type="text"]:hover,
 .loginBox input[type="password"]:hover {
-  color: #a5e3e5;
-  border: 1px solid #77dbdf;
+  color: #fff;
+  border: 1px solid #cff5ff;
   box-shadow: 0 0 5px rgba(57, 126, 205, 0.3), 0 0 10px rgba(7, 199, 252, 0.552), 0 0 15px rgba(56, 202, 255, 0.544), 0 2px 0 black
 }
 
