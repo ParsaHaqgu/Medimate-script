@@ -62,6 +62,13 @@ h3 {
   text-align: center
 }
 
+h4 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #124265;
+  text-align: center
+}
+
 .loginBox input {
   width: 100%;
   margin-bottom: 20px
@@ -117,7 +124,7 @@ h3 {
 }
 
 .loginBox a {
-  color: #262626;
+  color: #eeeeee;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -127,7 +134,8 @@ h3 {
 
 
 a:hover {
-  color: #2194ae
+  color: #daf8ff;
+  font-weight: 600;
 }
 
 p {
@@ -146,4 +154,9 @@ p {
   align-items: center;
 width: 100%;
 margin-bottom: 10px;
+}
+.animation{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
