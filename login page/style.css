@@ -1,6 +1,6 @@
 * {
   font-family:"IRANSans(FaNum)"  ;
-  text-align: right;
+  
 }
 
 .loginBox ::placeholder{
@@ -69,7 +69,7 @@ h3 {
   border-bottom: 2px solid #124265;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: #003a78;
   background: transparent;
   font-size: 16px;
   padding-left: 20px;
@@ -116,7 +116,7 @@ a:hover {
 
 
 
-.btn {
+ .btn {
   border: none;
   height: 40px;
   outline: none;
@@ -142,4 +142,95 @@ p{
  
 
   color: #a1c9e5;
+}
+
+#phone{
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  height: 30px;
+  
+  border-bottom: 2px solid #abd7f6;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  
+
+
+}
+
+.otp-phone{
+  text-align: left;
+}
+
+.modal-title{
+  align-items: start;
+  text-align: right;
+  margin-right: 30px;
+}
+.modal-content{
+  background-color: #035770;
+  color: #fff;
+
+
+}
+#submitBtn{
+  color: #124265;
+
+}
+.om p{
+  margin-right: 30px;
+  align-items: start;
+  text-align: right;
+  margin-right: 30px;
+}
+#otp-input{
+
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  height: 30px;
+  
+  border-bottom: 2px solid #abd7f6;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 13px;
+
+
+  
+
+}
+#verify-button{
+  color: #124265;
+}
+
+#otp-modal{
+
+
+}
+
+label{
+  margin-left: 10px;
+  text-align: left;
+  display: inline-block;
+  margin-left: 30px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#verify-button{
+
 }
