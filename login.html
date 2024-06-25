@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>login</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  
+
+  
+  
+  
+ 
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <link href="style2.css" rel="stylesheet">
+  
+
+
+</head>
+
+<body>
+  <div class="loginBox"> <a href="index.html"><i class='bx bx-exit' style="font-size: 20px;"></i></a>
+    <img class="user" src="login page/img/2.png" height="100px" width="100px">
+    
+    <h3> ورود کاربران </h3>
+    <form action="login.php" method="post">
+      <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="نام کاربری"> <input id="pass"
+          type="password" name="Password" placeholder="رمز عبور">
+          <a class="btn text-center" href="index.html"><p>ورود</p></a> 
+          </div>
+      
+    </form>
+   
+  
+
+    
+    <a href="../otp/otp.html"  class="otp" data-toggle="modal" data-target="#myModal">فراموشی رمز عبور <br> </a>
+    <div class="sign-in  mt-5">
+     <a href="sign in.html" > ثبت نام </a>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" style="color: rgb(31, 0, 131);" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">شماره موبایل خود را وارد کنید</h4>
+        </div>
+        <div class="modal-body">
+
+
+
+          
+       
+          <form id="phone-form">
+            <label for="phone">شماره تلفن:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+            <button type="submit" id="submit-button" disabled>ارسال</button>
+          </form>
+        
+          <div id="otp-modal" class="modal">
+            <div class="modal-content d-flex below">
+              <div class="modal-header">
+                <button type="button" style="color: white;" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">لطفا کد ارسال شده را وارد کنید     </h4>
+              </div>
+              <label class="otp-code" for="phone">کد تایید :</label>
+              <input type="text" id="otp-input" required>
+             <a href="index.html"> <button id="verify-button" >تأیید</button></a>
+            </div>
+          </div>
+        
+          <script>
+            const phoneInput = document.getElementById('phone');
+            const submitButton = document.getElementById('submit-button');
+            const otpModal = document.getElementById('otp-modal');
+            const otpInput = document.getElementById('otp-input');
+            const verifyButton = document.getElementById('verify-button');
+        
+            phoneInput.addEventListener('input', function() {
+              if (phoneInput.checkValidity()) {
+                submitButton.disabled = false;
+              } else {
+                submitButton.disabled = true;
+              }
+            });
+        
+            document.getElementById('phone-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // ارسال شماره تلفن به سرور و درخواست OTP
+              // در اینجا می‌توانید کدی برای ارسال درخواست OTP به سرور اضافه کنید
+        
+              // نمایش مدال OTP
+              otpModal.style.display = 'block';
+            });
+        
+            verifyButton.addEventListener('click', function() {
+              const enteredOTP = otpInput.value;
+              // اعتبارسنجی کد تأیید با سرور
+              // در اینجا می‌توانید کدی برای اعتبارسنجی کد تأیید با سرور اضافه کنید
+        
+              // اگر کد تأیید صحیح بود، کاربر به صفحه‌ی اصلی منتقل می‌شود
+              // window.location.href = 'صفحه‌ی اصلی';
+            });
+        
+            window.addEventListener('click', function(event) {
+              if (event.target == otpModal) {
+                otpModal.style.display = 'none';
+              }
+            });
+          </script>
+
+
+        
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+  
+  
+ 
+  
+
+</body>
+
+</html>
