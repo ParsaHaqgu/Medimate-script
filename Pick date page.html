@@ -13,11 +13,22 @@
   <!--============= CSS =============-->
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Doctor cards</title>
-  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Style6.css">
   <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/9a5cfa66e1.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 
 </head>
 <body style="direction: rtl;">
@@ -28,18 +39,15 @@
     <header id="header" class="header d-flex align-items-center sticky-top">
       <div class="container-fluid container-xl position-relative d-flex align-items-center">
   
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">MediMate</h1>
-        </a>
+        <a class="btn-login" href="../login page/login.html">ورود کاربر</a>
   
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#contact">ارتباط با ما</a></li>
-            <li><a href="#about">مجله سلامت</a></li>
-            <li><a href="#about">سایر خدمات</a></li>
-            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مراکز درمانی</span> </i></a>
+  
+            <li><a href="#">سایر خدمات</a></li>
+            <li class="dropdown"><a href="#services"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مراکز درمانی</span>
+                </i></a>
               <ul>
                 <li><a href="#"> بیمارستان </a></li>
                 <li><a href="#">کلینیک </a></li>
@@ -47,14 +55,16 @@
                 <li><a href="#">مرکز تصویربرداری </a></li>
               </ul>
             </li>
-            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مشاوره آنلاین</span> </i></a>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مشاوره
+                  آنلاین</span> </i></a>
               <ul>
                 <li><a href="#"> مشاوره تلفنی</a></li>
                 <li><a href="#">مشاوره متنی</a></li>
-               
+  
               </ul>
             </li>
-            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span>نوبت‌دهی مطب</span> </i></a>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span>نوبت‌دهی مطب</span>
+                </i></a>
               <ul>
                 <li><a href="#">پزشک عمومی</a></li>
                 <li><a href="#">متخصص داخلی</a></li>
@@ -62,15 +72,21 @@
                 <li><a href="#">متخصص قلب و عروق</a></li>
                 <li><a href="#">روان‌شناس </a></li>
                 <li><a href="#">متخصص مغز و اعصاب</a></li>
-                <li><a href="#"><i class='bx bx-chevron-left' ></i> سایر تخصص‌ها </a></li>
+                <li><a href="#specialist"><i class='bx bx-chevron-left'></i> سایر تخصص‌ها </a></li>
               </ul>
             </li>
-           
+            <li><a href="index.html">خانه </a></li>
+  
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">MediMate</h1>
+        </a>
   
-        <a class="btn-login" href="../login page/login.html">ورود کاربر</a>
+        
   
       </div>
     </header>
@@ -535,7 +551,6 @@
           </div>
           <p class="text-center mt-2 mb-0"><b>دکتر سمیرا میری</b></p>
           <p class="text-center mt-0"><small>پزشک متخصص قلب و عروق</small></p>
-          <button class="btn btn-primary container-fluid align-self-end" type="button">ادامه</button>
         </div>
       </div>
     </div>

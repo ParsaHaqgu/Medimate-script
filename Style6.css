@@ -1,11 +1,11 @@
-* {
-    text-align: right;
-    font-family: "IRANSansWeb(FaNum)";
-    font-style: normal;
-    font-weight: 100;
-    src: url('fonts/IRANSansWeb\(FaNum\).ttf') format('ttf');
-  
-  }
+*  {
+  text-align: right;
+
+  font-weight: 100;
+  src: url('fonts/IRANSansWeb\(FaNum\).ttf') format('ttf');
+  --default-font: "IRANSans(FaNum)" ;
+  --heading-font: "IRANSans(FaNum)" ;
+  --nav-font:"IRANSans(FaNum)" ;}
 
 
   #title-img{
@@ -69,7 +69,7 @@
   }
   
   .card {
-    background-color: #e6f3ff;
+    background-color: #daebfc;
     border: none;
   }
   
@@ -300,7 +300,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #e9f3f5; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #124265; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #47a0c1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
