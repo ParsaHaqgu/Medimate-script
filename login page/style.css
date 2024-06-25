@@ -43,10 +43,12 @@ body {
   transform: translate(-50%, -50%);
   width: 350px;
   min-height: 200px;
-  background: rgb(157, 212, 212);
+  background: #C8EBFF;
   border-radius: 10px;
   padding: 40px;
-  box-sizing: border-box
+  box-shadow: 0 0 5px rgba(196, 223, 255, 0.3), 0 0 10px rgba(187, 187, 187, 0.552), 0 0 15px rgba(56, 202, 255, 0.544), 0 0 0 black;
+  box-sizing: border-box;
+  
 }
 
 .user {
@@ -136,7 +138,7 @@ a:hover {
   display: flex;
 }
 p{
-  color: #fff;
+  color: #ffffff;
   align-items: center;
   text-align: center;
   box-sizing: content-box;
@@ -158,7 +160,7 @@ p{
   border-bottom: 2px solid #abd7f6;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: #3c3c3c;
   background: transparent;
   font-size: 16px;
   padding-left: 20px;
@@ -179,8 +181,9 @@ p{
   margin-right: 30px;
 }
 .modal-content{
-  background-color:rgb(98, 169, 169);
-  color: #fff;
+  background-color:#e9f3f5;
+  border: #003a78;
+  color: #000269;
 
 
 }
@@ -201,10 +204,10 @@ p{
   border-radius: 4px;
   height: 30px;
   
-  border-bottom: 2px solid #abd7f6;
+  border-bottom: 2px solid #003e6b;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: #002c84;
   background: transparent;
   font-size: 16px;
   padding-left: 20px;
@@ -243,7 +246,12 @@ label{
 }
 
 a:hover {
-  color: #daf8ff;
+  color: #4fa8bc;
   font-weight: 600;
+
+}
+
+.btn:hover{
+  background-color: #2194ae;
 }
 
