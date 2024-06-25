@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Doctor cards</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style4.css">
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/9a5cfa66e1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- <nav> -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">MediMate</h1>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#contact">ارتباط با ما</a></li>
+            <li><a href="#about">مجله سلامت</a></li>
+            <li><a href="#about">سایر خدمات</a></li>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مراکز درمانی</span>
+                </i></a>
+              <ul>
+                <li><a href="#"> بیمارستان </a></li>
+                <li><a href="#">کلینیک </a></li>
+                <li><a href="#">آزمایشگاه </a></li>
+                <li><a href="#">مرکز تصویربرداری </a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مشاوره
+                  آنلاین</span> </i></a>
+              <ul>
+                <li><a href="#"> مشاوره تلفنی</a></li>
+                <li><a href="#">مشاوره متنی</a></li>
+  
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span>نوبت‌دهی مطب</span>
+                </i></a>
+              <ul>
+                <li><a href="#">پزشک عمومی</a></li>
+                <li><a href="#">متخصص داخلی</a></li>
+                <li><a href="#">متخصص اطفال</a></li>
+                <li><a href="#">متخصص قلب و عروق</a></li>
+                <li><a href="#">روان‌شناس </a></li>
+                <li><a href="#">متخصص مغز و اعصاب</a></li>
+                <li><a href="#"><i class='bx bx-chevron-left'></i> سایر تخصص‌ها </a></li>
+              </ul>
+            </li>
+  
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+        <a class="btn-login" href="../login page/login.html">ورود کاربر</a>
+  
+      </div>
+    </header>
+    <!-- </nav> -->
+  <!-- Nav & Tab -->
+  <div class="tab-nav d-flex justify-content-center">
+    <nav class="tab d-block w-100 bg-body-non m-5 me-4 " style="border-radius: 2rem; border-color: #8cbabf;  ">
+      <form class="container justify-content-center pt-4">
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">مغز و اعصاب (نورولوژی)</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">داخلی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button"> غدد و متابولیسم</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button"> عمومی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">کودکان</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">ارتوپدی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">گوش حلق و بینی</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">قلب و عروق</button>
+        <button class="btn btn-sm btn-outline-secondary me-2" type="button">پوست ، مو و زیبایی</button>
+        <button class="btn  btn-outline-white  me-2" type="button">:جستجوهای پرتکرار</button>
+      </form>
+    </nav>
+  </div>
+  <!--/ Nav & Tab -->
+  <!-- headear card -->
+  <div class="container-fluid d-flex justify-content-center mb-3">
+    <div class="card" style="width: 67rem;">
+      <div class="card-body text-end">
+        متخصصان قلب و عروق
+      </div>
+    </div>
+  </div>
+  <!-- /header card -->
+  <!-- page content -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- cards -->
+      <div class="col col-lg-1 col-md-0"></div>
+      <div class="col-lg-9 col-xl-7 col-sm-12">
+        <div class="container">
+          <div class="card w-100 mb-3 pt-2 ps-3 pe-2 d-flex justify-content-center" style="min-width: min-content;">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-md-3 pb-4 align-self-center">
+                <div class="d-flex justify-content-center">
+                  <img src="doc.jpg" class="img-fluid rounded-circle align-self-center" id="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" id="card-pad">
+                  <div class="row">
+                    <div class="col-md-8 col-sm-12 row">
+                      <div class="align-self-start d-flex" id="in-cards">
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-stethoscope"></i> +145</h5>
+                            <p class="card-text text-center">مشاوره موفق</p>
+                          </div>
+                        </div>
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-text text-center mb-0"><i class="fa-regular fa-star"></i> 4.6</h5>
+                            <p class="card-text text-center">23نظر</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-receipt"></i></h5>
+                            <p class="card-text text-center">نسخه</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 align-self-center">
+                      <h5 class="card-title pt-2 text-center text-sm-center text-xs-center text-lg-end text-xl-end">دکترسمیرا میری</h5>
+                      <p class="card-text text-center text-sm-center text-xs-center text-lg-end text-xl-end"><small class="text-body-secondary">متخصص بیماری‌های پوست و مو</small></p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <hr class="text-secondary divider mb-2">
+                    <div class="divider-content-center"></div>
+                 </div>
+                 <div class="row">
+                  <div class="col-md-4 col-sm-4 mb-0 align-self-start d-flex justify-content-start">
+                    <a href="#" class="btn btn-primary">نوبت بگیرید</a>
+                  </div>
+                  <div class="col-md-1 mb-0 align-self-start d-flex justify-content-end">
+                  </div>
+                  <div class="col mb-0 align-self-start d-flex justify-content-end">
+                    <a href="#" class="btn btn-primary me-2">تلفن <i class="fa-solid fa-phone"></i></a>
+                    <a href="#" class="btn btn-primary">پیام <i class="fa-regular fa-message"></i></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 pt-2 ps-3 pe-2" style="min-width: min-content;">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-md-3 pb-4 align-self-center">
+                <div class="d-flex justify-content-center">
+                  <img src="doc0.jpg" class="img-fluid rounded-circle align-self-center" id="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" id="card-pad">
+                  <div class="row">
+                    <div class="col-md-8 row">
+                      <div class="align-self-start d-flex" id="in-cards">
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-stethoscope"></i> +145</h5>
+                            <p class="card-text text-center">مشاوره موفق</p>
+                          </div>
+                        </div>
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-text text-center mb-0"><i class="fa-regular fa-star"></i> 4.6</h5>
+                            <p class="card-text text-center">23نظر</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-receipt"></i></h5>
+                            <p class="card-text text-center">نسخه</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                      <h5 class="card-title pt-2 text-center text-sm-center text-xs-center text-lg-end text-xl-end">دکترسمیرا میری</h5>
+                      <p class="card-text text-center text-sm-center text-xs-center text-lg-end text-xl-end"><small class="text-body-secondary">متخصص بیماری‌های پوست و مو</small></p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <hr class="text-secondary divider mb-2">
+                    <div class="divider-content-center"></div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-4 mb-0 align-self-start d-flex justify-content-start">
+                      <a href="#" class="btn btn-primary">نوبت بگیرید</a>
+                    </div>
+                    <div class="col-md-2 mb-0 align-self-start d-flex justify-content-end">
+                    </div>
+                    <div class="col-md-6 mb-0 align-self-start d-flex justify-content-end">
+                      <a href="#" class="btn btn-primary me-2">تلفن <i class="fa-solid fa-phone"></i></a>
+                      <a href="#" class="btn btn-primary">پیام <i class="fa-regular fa-message"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
+          </div>
+          <div class="card mb-3 pt-2 ps-3 pe-2" style="min-width: min-content;">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-md-3 pb-4 align-self-center">
+                <div class="d-flex justify-content-center">
+                  <img src="doc2.jpeg" class="img-fluid rounded-circle align-self-center" id="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" id="card-pad">
+                  <div class="row">
+                    <div class="col-md-8 row">
+                      <div class="align-self-start d-flex" id="in-cards">
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-stethoscope"></i> +145</h5>
+                            <p class="card-text text-center">مشاوره موفق</p>
+                          </div>
+                        </div>
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-text text-center mb-0"><i class="fa-regular fa-star"></i> 4.6</h5>
+                            <p class="card-text text-center">23نظر</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-receipt"></i></h5>
+                            <p class="card-text text-center">نسخه</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                      <h5 class="card-title pt-2 text-center text-sm-center text-xs-center text-lg-end text-xl-end">دکترسمیرا میری</h5>
+                      <p class="card-text text-center text-sm-center text-xs-center text-lg-end text-xl-end"><small class="text-body-secondary">متخصص بیماری‌های پوست و مو</small></p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <hr class="text-secondary divider mb-2">
+                    <div class="divider-content-center"></div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-4 mb-0 align-self-start d-flex justify-content-start">
+                      <a href="#" class="btn btn-primary">نوبت بگیرید</a>
+                    </div>
+                    <div class="col-md-2 mb-0 align-self-start d-flex justify-content-end">
+                    </div>
+                    <div class="col-md-6 mb-0 align-self-start d-flex justify-content-end">
+                      <a href="#" class="btn btn-primary me-2">تلفن <i class="fa-solid fa-phone"></i></a>
+                      <a href="#" class="btn btn-primary">پیام <i class="fa-regular fa-message"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
+          </div>
+          <div class="card mb-3 pt-2 ps-3 pe-2" style="min-width: min-content;">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-md-3 pb-4 align-self-center">
+                <div class="d-flex justify-content-center">
+                  <img src="doc.jpg" class="img-fluid rounded-circle align-self-center" id="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" id="card-pad">
+                  <div class="row">
+                    <div class="col-md-8 row">
+                      <div class="align-self-start d-flex" id="in-cards">
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-stethoscope"></i> +145</h5>
+                            <p class="card-text text-center">مشاوره موفق</p>
+                          </div>
+                        </div>
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-text text-center mb-0"><i class="fa-regular fa-star"></i> 4.6</h5>
+                            <p class="card-text text-center">23نظر</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-receipt"></i></h5>
+                            <p class="card-text text-center">نسخه</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                      <h5 class="card-title pt-2 text-center text-sm-center text-xs-center text-lg-end text-xl-end">دکترسمیرا میری</h5>
+                      <p class="card-text text-center text-sm-center text-xs-center text-lg-end text-xl-end"><small class="text-body-secondary">متخصص بیماری‌های پوست و مو</small></p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <hr class="text-secondary divider mb-2">
+                    <div class="divider-content-center"></div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-4 mb-0 align-self-start d-flex justify-content-start">
+                      <a href="#" class="btn btn-primary">نوبت بگیرید</a>
+                    </div>
+                    <div class="col-md-2 mb-0 align-self-start d-flex justify-content-end">
+                    </div>
+                    <div class="col-md-6 mb-0 align-self-start d-flex justify-content-end">
+                      <a href="#" class="btn btn-primary me-2">تلفن <i class="fa-solid fa-phone"></i></a>
+                      <a href="#" class="btn btn-primary">پیام <i class="fa-regular fa-message"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 pt-2 ps-3 pe-2" style="min-width: min-content;">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-md-3 pb-4 align-self-center">
+                <div class="d-flex justify-content-center">
+                  <img src="doc.jpg" class="img-fluid rounded-circle align-self-center" id="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" id="card-pad">
+                  <div class="row">
+                    <div class="col-md-8 row">
+                      <div class="align-self-start d-flex" id="in-cards">
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-stethoscope"></i> +145</h5>
+                            <p class="card-text text-center">مشاوره موفق</p>
+                          </div>
+                        </div>
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-text text-center mb-0"><i class="fa-regular fa-star"></i> 4.6</h5>
+                            <p class="card-text text-center">23نظر</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-receipt"></i></h5>
+                            <p class="card-text text-center">نسخه</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                      <h5 class="card-title pt-2 text-center text-sm-center text-xs-center text-lg-end text-xl-end">دکترسمیرا میری</h5>
+                      <p class="card-text text-center text-sm-center text-xs-center text-lg-end text-xl-end"><small class="text-body-secondary">متخصص بیماری‌های پوست و مو</small></p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <hr class="text-secondary divider mb-2">
+                    <div class="divider-content-center"></div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-4 mb-0 align-self-start d-flex justify-content-start">
+                      <a href="#" class="btn btn-primary">نوبت بگیرید</a>
+                    </div>
+                    <div class="col-md-2 mb-0 align-self-start d-flex justify-content-end">
+                    </div>
+                    <div class="col-md-6 mb-0 align-self-start d-flex justify-content-end">
+                      <a href="#" class="btn btn-primary me-2">تلفن <i class="fa-solid fa-phone"></i></a>
+                      <a href="#" class="btn btn-primary">پیام <i class="fa-regular fa-message"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 pt-2 ps-3 pe-2" style="min-width: min-content;">
+            <div class="row g-0 flex-row-reverse">
+              <div class="col-md-3 pb-4 align-self-center">
+                <div class="d-flex justify-content-center">
+                  <img src="doc.jpg" class="img-fluid rounded-circle align-self-center" id="card-img" alt="...">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body" id="card-pad">
+                  <div class="row">
+                    <div class="col-md-8 row">
+                      <div class="align-self-start d-flex" id="in-cards">
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-stethoscope"></i> +145</h5>
+                            <p class="card-text text-center">مشاوره موفق</p>
+                          </div>
+                        </div>
+                        <div class="card me-2">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-text text-center mb-0"><i class="fa-regular fa-star"></i> 4.6</h5>
+                            <p class="card-text text-center">23نظر</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body" style="background-color: rgba(244, 250, 255, 0.715); border-radius: 10px;">
+                            <h6 class="card-title text-center mb-0"><i class="fa-solid fa-receipt"></i></h5>
+                            <p class="card-text text-center">نسخه</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                      <h5 class="card-title pt-2 text-center text-sm-center text-xs-center text-lg-end text-xl-end">دکترسمیرا میری</h5>
+                      <p class="card-text text-center text-sm-center text-xs-center text-lg-end text-xl-end"><small class="text-body-secondary">متخصص بیماری‌های پوست و مو</small></p>
+                    </div>
+                  </div>
+                  <div class="position-relative">
+                    <hr class="text-secondary divider mb-2">
+                    <div class="divider-content-center"></div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-4 col-sm-4 mb-0 align-self-start d-flex justify-content-start">
+                      <a href="#" class="btn btn-primary">نوبت بگیرید</a>
+                    </div>
+                    <div class="col-md-1 mb-0 align-self-start d-flex justify-content-end">
+                    </div>
+                    <div class="col mb-0 align-self-start d-flex justify-content-end">
+                      <a href="#" class="btn btn-primary me-2">تلفن <i class="fa-solid fa-phone"></i></a>
+                      <a href="#" class="btn btn-primary">پیام <i class="fa-regular fa-message"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col col-lg-3 d-none d-xl-block ">
+        <div class="card position-sticky top-0 mb-4">
+          <div class="card-header">
+            <div class="container d-flex justify-content-between">
+              <a href="#" class="btn btn-primary">حذف فیلترها</a>
+              <p class="text-strat">حذف فیلترها</p>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button flex-row-reverse" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    نوع مشاوره
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1"> مشاوره تلفنی </label>
+                      <input type="checkbox" class="form-check-input" id="formcheck">
+                    </div>
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1"> مشاوره متنی</label>
+                      <input type="checkbox" class="form-check-input" id="formcheck">
+                    </div>
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1"> مشاوره آنلاین </label>
+                      <input type="checkbox" class="form-check-input" id="formcheck">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed flex-row-reverse" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    تخصص
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1">کاردیوانکولوژی</label>
+                      <input type="checkbox" class="form-check-input" id="formcheck">
+                    </div>
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1">قلب و عروقی کودکان</label>
+                      <input type="checkbox" class="form-check-input" id="formcheck">
+                    </div>
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1">بیماری قلبی مادرزادی</label>
+                      <input type="checkbox" class="form-check-input" id="formcheck">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed flex-row-reverse" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    جنسیت
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1">زن</label>
+                      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                    </div>
+                    <div class="mb-2 me-2">
+                      <label for="formcheck" class="form-check-label me-1">مرد</label>
+                      <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4>دسترسی آسان </h4>
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#"> درباره ما</a></li>
+            <li><a href="#">خدمات ما</a></li>
+
+            <li><a href="#"> پشتیبانی</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4>خدمات ما </h4>
+          <ul>
+            <li><a href="#">نوبت‌دهی پزشک </a></li>
+            <li><a href="#"> مشاوره تلفنی</a></li>
+            <li><a href="#"> مشاوره متنی</a></li>
+            <li><a href="#">آزمایش در محل</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-4 footer-contact text-center text-md-start">
+          <h4> ارتباط با ما</h4>
+          <p>تهران</p>
+          <p>سهروردی شمالی </p>
+          <p class="mt-4"> <span>021 346 7000</span><strong>تلفن</strong></p>
+
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="title"> MediMate</span>
+          </a>
+          <p>با وجود شبکه‌ی حرفه‌ای پزشکان در ویکلینیک و ارتباط مستقیم با مطب، با اطمینان خاطر نوبت خود را به صورت
+            اینترنتی رزرو کنید. پزشکان این سامانه، از ابزارهای هوشمند برای ارتقا کیفیت و کاهش طول درمان استفاده می‌کنند.
+            در تمامی مراحل درمان و پسادرمان، مدیمیت همراه شماست.</p>
+
+
+          <div class="standard">
+
+            <div class="row d-flex">
+              <img style="width: 100px;" class="img p-2 "
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fnezam-senfi.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Friyasat-jomhoori.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fsamandehi.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img  p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fbadge3-minoXs9hk.jpg&w=96&q=75"
+                alt="">
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+
+      <div class="social-links d-flex text-center mt-4 mb-">
+
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class='bx bx-envelope'></i></a>
+      </div>
+
+      <p class="footer-copyright  text-center"> تمامی حقوق مادی و معنوی این وب‌سایت، خدمات و محتوای مربوط به آن متعلق به
+        مدیمیت می‌باشد © </p>
+
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+</html>
