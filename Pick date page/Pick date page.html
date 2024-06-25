@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+  <!--============= SWIPER CSS ===========-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--============= CSS =============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Doctor cards</title>
+  
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Style6.css">
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/9a5cfa66e1.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
+</head>
+<body style="direction: rtl;">
+  
+  
+  
+  <!-- <nav> -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a class="btn-login" href="../login page/login.html">ورود کاربر</a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#contact">ارتباط با ما</a></li>
+  
+            <li><a href="#">سایر خدمات</a></li>
+            <li class="dropdown"><a href="#services"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مراکز درمانی</span>
+                </i></a>
+              <ul>
+                <li><a href="#"> بیمارستان </a></li>
+                <li><a href="#">کلینیک </a></li>
+                <li><a href="#">آزمایشگاه </a></li>
+                <li><a href="#">مرکز تصویربرداری </a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مشاوره
+                  آنلاین</span> </i></a>
+              <ul>
+                <li><a href="#"> مشاوره تلفنی</a></li>
+                <li><a href="#">مشاوره متنی</a></li>
+  
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span>نوبت‌دهی مطب</span>
+                </i></a>
+              <ul>
+                <li><a href="#">پزشک عمومی</a></li>
+                <li><a href="#">متخصص داخلی</a></li>
+                <li><a href="#">متخصص اطفال</a></li>
+                <li><a href="#">متخصص قلب و عروق</a></li>
+                <li><a href="#">روان‌شناس </a></li>
+                <li><a href="#">متخصص مغز و اعصاب</a></li>
+                <li><a href="#specialist"><i class='bx bx-chevron-left'></i> سایر تخصص‌ها </a></li>
+              </ul>
+            </li>
+            <li><a href="index.html">خانه </a></li>
+  
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">MediMate</h1>
+        </a>
+  
+        
+  
+      </div>
+    </header>
+    <!-- </nav> -->
+  
+  
+  
+  
+  
+  <!-- headear -->
+  <div class="container-fluid d-flex justify-content-center mt-4 mb-2">
+    <div class="card" style="width: 62rem;">
+      <div class="card-body text-end pe-4">
+        <h6>انتخاب نوبت: دکتر سمیرا میری</h6>
+      </div>
+    </div>
+  </div>
+  <!-- /header -->
+  <!-- main content -->
+  <div class="col-lg-8 col-md-11 col-sm-12 container-fluid d-flex justify-content-center ">
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      <!-- date picker card -->
+      <div class="card me-3 ms-2" style="min-width: fit-content;">
+        <div class="card-body text-end pe-4 ps-3">
+          <h6>انتخاب زمان:</h6>
+          <div class="d-flex">
+
+            <!--day list-->
+            <div class="col-lg-4">
+              <div class="list-group border-end ms-0" id="list-tab" role="tablist" style="overflow: auto; height: 250px;">
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#1" role="tab" aria-controls="list-profile"><div class="d-flex justify-content-between">یکشنبه<div style="font-size: 80%;">04/10</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#2" role="tab" aria-controls="list-messages"><div class="d-flex justify-content-between">دوشنبه<div style="font-size: 80%;">04/12</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#3" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">سه‌شنبه<div style="font-size: 80%;">04/13</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#4" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">شنبه<div style="font-size: 80%;">04/17</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#1" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">سه‌شنبه<div style="font-size: 80%;">04/20</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#2" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">چهارشنبه<div style="font-size: 80%;">04/21</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#3" role="tab" aria-controls="list-messages"><div class="d-flex justify-content-between">شنبه<div style="font-size: 80%;">04/24</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#4" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">یکشنبه<div style="font-size: 80%;">04/25</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#1" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">دوشنبه<div style="font-size: 80%;">04/26</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#2" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">شنبه<div style="font-size: 80%;">04/31</div></div></a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#3" role="tab" aria-controls="list-settings"><div class="d-flex justify-content-between">دوشنبه<div style="font-size: 80%;">05/01</div></div></a>
+              </div>
+            </div>
+            <!--/day list-->
+            <!--time picker-->
+            <div class="col-lg-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="1" role="tabpanel" aria-labelledby="list-home-list">
+                  <div class="card me-0" style="height: 250px; overflow-y: auto;">
+                    <div class="card-body">
+                      <div>
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">صبح</div>
+                        </div>
+                        <!--/divider-->
+                        <div class="row my-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">08:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">08:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:15</button>
+                          </div>
+                        </div>
+
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">ظهر</div>
+                        </div>
+                        <!--/divider-->
+
+                        <div class="row mt-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">02:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">02:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">03:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:30</button>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="tab-pane fade" id="2" role="tabpanel" aria-labelledby="list-profile-list">
+                  <div class="card me-0" style="height: 250px; overflow-y: auto;">
+                    <div class="card-body">
+                      <div>
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">صبح</div>
+                        </div>
+                        <!--/divider-->
+                        <div class="row my-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">08:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">08:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:15</button>
+                          </div>
+                        </div>
+
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">ظهر</div>
+                        </div>
+                        <!--/divider-->
+
+                        <div class="row mt-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">02:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">02:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">03:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:30</button>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="tab-pane fade" id="3" role="tabpanel" aria-labelledby="list-messages-list">
+                  <div class="card me-0" style="height: 250px; overflow-y: auto;">
+                    <div class="card-body">
+                      <div>
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">صبح</div>
+                        </div>
+                        <!--/divider-->
+                        <div class="row my-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">08:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">08:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">09:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">09:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">09:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">09:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:15</button>
+                          </div>
+                        </div>
+
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider">
+                          <div class="divider-content-center">ظهر</div>
+                        </div>
+                        <!--/divider-->
+
+                        <div class="row mt-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">01:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">02:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">02:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">03:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:30</button>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="tab-pane fade" id="4" role="tabpanel" aria-labelledby="list-settings-list">
+                  <div class="card me-0" style="height: 250px; overflow-y: auto;">
+                    <div class="card-body">
+                      <div>
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">صبح</div>
+                        </div>
+                        <!--/divider-->
+                        <div class="row my-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">08:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">08:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid disabled" id="time-btn" data-bs-toggle="button">09:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">10:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">11:15</button>
+                          </div>
+                        </div>
+
+                        <!--divider-->
+                        <div class="position-relative">
+                          <hr class="text-secondary divider mb-0">
+                          <div class="divider-content-center">ظهر</div>
+                        </div>
+                        <!--/divider-->
+
+                        <div class="row mt-4">
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">01:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">01:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">01:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">01:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:30</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">02:45</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">03:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:00</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:15</button>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-6">
+                            <button type="button" class="btn btn-primary container-fluid" id="time-btn" data-bs-toggle="button">04:30</button>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <!--/time picker-->
+          </div>
+        </div>
+      </div>
+      <!--/date picker card-->
+    </div>
+    <div class="d-none d-lg-block d-xl-block col-lg-4 col-xl-4 ">
+      <div class="card ms-3 h-100">
+        <div class="card-body text-end pe-4">
+          <div class="d-flex justify-content-center">
+            <img class="rounded-circle" id="title-img" src="doc/doc0.jpg" alt="title">
+          </div>
+          <p class="text-center mt-2 mb-0"><b>دکتر سمیرا میری</b></p>
+          <p class="text-center mt-0"><small>پزشک متخصص قلب و عروق</small></p>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+  <!--footer-->
+
+
+  
+  <div class="col-lg-12"></div>
+  
+
+  <footer id="footer" class="footer mt-5">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4>دسترسی آسان </h4>
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#"> درباره ما</a></li>
+            <li><a href="#">خدمات ما</a></li>
+
+            <li><a href="#"> پشتیبانی</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4>خدمات ما </h4>
+          <ul>
+            <li><a href="#">نوبت‌دهی پزشک </a></li>
+            <li><a href="#"> مشاوره تلفنی</a></li>
+            <li><a href="#"> مشاوره متنی</a></li>
+            <li><a href="#">آزمایش در محل</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-4 footer-contact text-center text-md-start">
+          <h4> ارتباط با ما</h4>
+          <p>تهران</p>
+          <p>سهروردی شمالی </p>
+          <p class="mt-4"> <span>021 346 7000</span><strong>تلفن</strong></p>
+
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="title"> MediMate</span>
+          </a>
+          <p>با وجود شبکه‌ی حرفه‌ای پزشکان در ویکلینیک و ارتباط مستقیم با مطب، با اطمینان خاطر نوبت خود را به صورت
+            اینترنتی رزرو کنید. پزشکان این سامانه، از ابزارهای هوشمند برای ارتقا کیفیت و کاهش طول درمان استفاده می‌کنند.
+            در تمامی مراحل درمان و پسادرمان، مدیمیت همراه شماست.</p>
+
+
+          <div class="standard">
+
+            <div class="row d-flex">
+              <img style="width: 100px;" class="img p-2 "
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fnezam-senfi.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Friyasat-jomhoori.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fsamandehi.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img  p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fbadge3-minoXs9hk.jpg&w=96&q=75"
+                alt="">
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+
+      <div class="social-links d-flex text-center mt-4 mb-">
+
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class='bx bx-envelope'></i></a>
+      </div>
+
+      <p class="footer-copyright  text-center"> تمامی حقوق مادی و معنوی این وب‌سایت، خدمات و محتوای مربوط به آن متعلق به
+        مدیمیت می‌باشد © </p>
+
+
+    </div>
+
+  </footer>
+
+  <!--/footer-->
+
+
+</body>
+</html>
