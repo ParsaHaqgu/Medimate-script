@@ -1,17 +1,16 @@
 * {
-  text-align: right;
+    text-align: right;
 
-  font-weight: 100;
-  src: url('fonts/IRANSansWeb\(FaNum\).ttf') format('ttf');
-  --default-font: "IRANSans(FaNum)" ;
-  --heading-font: "IRANSans(FaNum)" ;
-  --nav-font:"IRANSans(FaNum)" ;
-
-}
-
-
-
+    font-weight: 100;
+    src: url('fonts/IRANSansWeb\(FaNum\).ttf') format('ttf');
+    --default-font: "IRANSans(FaNum)" ;
+    --heading-font: "IRANSans(FaNum)" ;
+    --nav-font:"IRANSans(FaNum)" ;
   
+  }
+
+
+
 
   /**
 * Template Name: OnePage
@@ -32,7 +31,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #e9f3f5; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #124265; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #47a0c1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -644,7 +643,9 @@ animation: hoverShake 0.15s linear 3;
 
 }
 
-
+.footer .standard{
+ 
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -671,8 +672,21 @@ animation: hoverShake 0.15s linear 3;
   animation: animate-preloader 1.5s linear infinite;
 }
 
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
 
-  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
   .navbar {
     background-color: #558d93;
   }
@@ -700,6 +714,21 @@ animation: hoverShake 0.15s linear 3;
   
     }
   }
+
+  #title-img{
+    width: 160px;
+  }
+  
+  @media (max-width: 435px) {
+    #doctor-data{
+      font-size: 12px;
+    }
+  }
+
+  #suggest-doctor{
+    width: 100px;
+  }
+  
   
   .search{
   
@@ -730,48 +759,62 @@ animation: hoverShake 0.15s linear 3;
     background-color: #f7bdf2;
   }
   }
+  
 
-  @media (max-width: 992px){
-    #card-img{
-      width: 8rem;
-      margin-top: 8px;
 
-    }
-  }
-  @media (min-width: 992px){
-    #card-img{
-      width: 75%;
-    }
-  }
 
-  @media (max-width: 992px){
-    #in-cards{
-      width: 100%;
-      white-space: nowrap;
-      justify-content: center;
-      min-width: min-content;
-      font-size: 80%;
-      margin-left: 2%;
-    }
-    #card-pad{
-      padding-left: 5px;
-    }
-  }
-  @media (min-width: 991px){
-    #in-cards{
-      width: 100%;
-      white-space: nowrap;
-      justify-content: start;
-      min-width: min-content;
-      font-size: 95%;
-    }
-  }
 
-  @media (max-width: 768px){
-    #doc-name{
-      justify-content: center;
-    }
+
+
+  .page-title {
+    --background-color: var(--accent-color);
+    --default-color: var(--contrast-color);
+    --heading-color: var(--contrast-color);
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
   }
+  
+  .page-title h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .page-title .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .page-title .breadcrumbs ol a {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+  }
+  
+  .page-title .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .page-title .breadcrumbs ol li+li::before {
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
+  
+
+
+
+
+
+
 
 
 
@@ -948,4 +991,11 @@ animation: hoverShake 0.15s linear 3;
   .img-banner{
     align-items: center;
     justify-content: center;
+  }
+  .img-card{
+    align-items: center;
+    justify-content: center;
+  }
+  #suggest-card{
+    border: 1px black;
   }

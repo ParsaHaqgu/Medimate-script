@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  dir="rtl" lang="fa-IR">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -13,12 +13,78 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Doctor cards</title>
   <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style5.css">
   <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/9a5cfa66e1.js" crossorigin="anonymous"></script>
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+
 </head>
+
+
+<!-- <nav> -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a class="btn-login" href="../login page/login.html">ورود کاربر</a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#contact">ارتباط با ما</a></li>
+          <li><a href="#about">مجله سلامت</a></li>
+          <li><a href="#about">سایر خدمات</a></li>
+          <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مراکز درمانی</span>
+              </i></a>
+            <ul>
+              <li><a href="#"> بیمارستان </a></li>
+              <li><a href="#">کلینیک </a></li>
+              <li><a href="#">آزمایشگاه </a></li>
+              <li><a href="#">مرکز تصویربرداری </a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span> مشاوره
+                آنلاین</span> </i></a>
+            <ul>
+              <li><a href="#"> مشاوره تلفنی</a></li>
+              <li><a href="#">مشاوره متنی</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><i class="bi bi-chevron-down toggle-dropdown"> </i><span>نوبت‌دهی مطب</span>
+              </i></a>
+            <ul>
+              <li><a href="#">پزشک عمومی</a></li>
+              <li><a href="#">متخصص داخلی</a></li>
+              <li><a href="#">متخصص اطفال</a></li>
+              <li><a href="#">متخصص قلب و عروق</a></li>
+              <li><a href="#">روان‌شناس </a></li>
+              <li><a href="#">متخصص مغز و اعصاب</a></li>
+              <li><a href="#"><i class='bx bx-chevron-left'></i> سایر تخصص‌ها </a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">MediMate</h1>
+      </a>
+
+      
+
+    </div>
+  </header>
+  <!-- </nav> -->
+
+
+
+
 <body style="direction: rtl;">
   <div class="col-lg-7 col-sm-12 container-fluid">
     <div class="card my-2">
@@ -349,5 +415,103 @@
       </div>
     </div>   
   </div>
+  
+
+
+  <div class="col-lg-12"></div>
+  
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4>دسترسی آسان </h4>
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#"> درباره ما</a></li>
+            <li><a href="#">خدمات ما</a></li>
+
+            <li><a href="#"> پشتیبانی</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-4 footer-links">
+          <h4>خدمات ما </h4>
+          <ul>
+            <li><a href="#">نوبت‌دهی پزشک </a></li>
+            <li><a href="#"> مشاوره تلفنی</a></li>
+            <li><a href="#"> مشاوره متنی</a></li>
+            <li><a href="#">آزمایش در محل</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-4 footer-contact text-center text-md-start">
+          <h4> ارتباط با ما</h4>
+          <p>تهران</p>
+          <p>سهروردی شمالی </p>
+          <p class="mt-4"> <span>021 346 7000</span><strong>تلفن</strong></p>
+
+        </div>
+
+        <div class="col-lg-5 col-md-5 col-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="title"> MediMate</span>
+          </a>
+          <p>با وجود شبکه‌ی حرفه‌ای پزشکان در ویکلینیک و ارتباط مستقیم با مطب، با اطمینان خاطر نوبت خود را به صورت
+            اینترنتی رزرو کنید. پزشکان این سامانه، از ابزارهای هوشمند برای ارتقا کیفیت و کاهش طول درمان استفاده می‌کنند.
+            در تمامی مراحل درمان و پسادرمان، مدیمیت همراه شماست.</p>
+
+
+          <div class="standard">
+
+            <div class="row d-flex">
+              <img style="width: 100px;" class="img p-2 "
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fnezam-senfi.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Friyasat-jomhoori.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fsamandehi.jpg&w=96&q=75"
+                alt="">
+              <img style="width: 100px;" class="img  p-2"
+                src="https://www.darmankade.com/_next/image/?url=%2Fimages%2Fcertificate%2Fbadge3-minoXs9hk.jpg&w=96&q=75"
+                alt="">
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+
+      <div class="social-links d-flex text-center mt-4 mb-">
+
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class='bx bx-envelope'></i></a>
+      </div>
+
+      <p class="footer-copyright  text-center"> تمامی حقوق مادی و معنوی این وب‌سایت، خدمات و محتوای مربوط به آن متعلق به
+        مدیمیت می‌باشد © </p>
+
+
+    </div>
+
+  </footer>
+
 </body>
 </html>
